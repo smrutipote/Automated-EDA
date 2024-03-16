@@ -1,0 +1,1244 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "id": "4a28a16b",
+      "metadata": {
+        "id": "4a28a16b"
+      },
+      "source": [
+        "### 1. What Is Object-Oriented Programming?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "96955d91",
+      "metadata": {
+        "id": "96955d91"
+      },
+      "outputs": [],
+      "source": [
+        "1. OOPs stands for Object-Oriented Programming\n",
+        "2. An object is a group of interrelated variables and functions.\n",
+        "3. These variables are often referred to as properties of the object, and functions are referred to as the behavior of the objects.\n",
+        "4. These objects provide a better and clear structure for the program.\n",
+        "5. Main principles of OOPs in Python are abstraction, encapsulation, inheritance, and polymorphism\n",
+        "6.OOP makes program more readable, reusable and in more structural format."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "ef7e322a",
+      "metadata": {
+        "id": "ef7e322a"
+      },
+      "source": [
+        "### 2. Difference between Procedural programming and OOPs?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "87ecb141",
+      "metadata": {
+        "id": "87ecb141"
+      },
+      "outputs": [],
+      "source": [
+        "Procedural Oriented Programming\n",
+        "1.Procedural Programming can be defined as a programming model which is based upon the concept of calling procedure.\n",
+        "2.In procedural programming, program is divided into small parts called functions.\n",
+        "3.Procedural programming follows top down approach.\n",
+        "4.There is no access specifier in procedural programming.\n",
+        "5.Adding new data and function is not easy.\n",
+        "6.Procedural programming does not have any proper way for hiding data so it is less secure.\n",
+        "7.In procedural programming, function is more important than data.\n",
+        "8.Procedural programming is based on unreal world.(Logical Entity)\n",
+        "\n",
+        "Languages used in Procedural Programming:\n",
+        "\n",
+        "FORTRAN, ALGOL, COBOL,\n",
+        "BASIC, Pascal and C.\n",
+        "\n",
+        "Object Oriented Programming\n",
+        "\n",
+        "1.Object oriented programming can be defined as a programming model which is based upon the concept of objects\n",
+        "2.In object oriented programming, program is divided into small parts called objects.\n",
+        "3.Object oriented programming follows bottom up approach.\n",
+        "4.Object oriented programming have access specifiers like private and public.\n",
+        "5.Adding new data and function is easy.\n",
+        "6.Object oriented programming provides data hiding so it is more secure.\n",
+        "7.In object oriented programming, data is more important than function.\n",
+        "8.Object oriented programming is based on real world.(Physical Entity)\n",
+        "\n",
+        "Languages used in Object Oriented Programming:\n",
+        "\n",
+        "Java, C++, C#, Python,\n",
+        "PHP, JavaScript, Ruby, Perl,"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "2353899d",
+      "metadata": {
+        "id": "2353899d"
+      },
+      "source": [
+        "### 3. What are the fundamental principles/features of Object-Oriented Programming?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4c44f867",
+      "metadata": {
+        "id": "4c44f867"
+      },
+      "outputs": [],
+      "source": [
+        "*.  Object-Oriented Programming (OOP) is based on several fundamental principles and features,\n",
+        "    that guide the design and implementation of software systems.\n",
+        "    There are 4 fundamentals of OOP's are:\n",
+        "1.Inheritance\n",
+        "2.Encapsulation\n",
+        "3.Polymorphism\n",
+        "4.Abstraction"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "58aabf92",
+      "metadata": {
+        "id": "58aabf92"
+      },
+      "source": [
+        "### 4. What is an object?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "657ee2a6",
+      "metadata": {
+        "id": "657ee2a6"
+      },
+      "outputs": [],
+      "source": [
+        "1.Everything is in Python treated as an object, including variable, function, list, tuple, dictionary, set,frozenset etc.\n",
+        "2.Every object belongs to its class.\n",
+        "3.object is real world entity.\n",
+        "4.object is nothing but instance of a class or variable of a class.\n",
+        "5. for create class\n",
+        "\n",
+        "   object=ClassName(arguments)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "1005da33",
+      "metadata": {
+        "id": "1005da33"
+      },
+      "source": [
+        "### 5. What is a class?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "cde5bbf6",
+      "metadata": {
+        "id": "cde5bbf6"
+      },
+      "outputs": [],
+      "source": [
+        "1.class is nothing but Blueprint of an object that defines variables and methods.\n",
+        "2. Class defines using keyword class\n",
+        "3. class is blueprint from which we can create object.\n",
+        "4.It is a logical entities which contains some attributes and methods"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "0eb17198",
+      "metadata": {
+        "id": "0eb17198"
+      },
+      "source": [
+        "### 6. What is the difference between a class and an object?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "f1052890",
+      "metadata": {
+        "id": "f1052890"
+      },
+      "outputs": [],
+      "source": [
+        "class:\n",
+        "    1.class is used as template for creating and declaring of an object.\n",
+        "    2. when class is created no memory allocated.\n",
+        "    3.the class is declared only once.\n",
+        "    4.class is a logical entity\n",
+        "    5. it is declared with keyword class.\n",
+        "    6.class does not contain any argument value which can be associated with the field.\n",
+        "    7.a class used to bind data as well as method together as a single unit.\n",
+        "\n",
+        "\n",
+        "object:\n",
+        "    1.An object is an instance of a class.\n",
+        "    2.Objects are allocated memory space whenever they are created.\n",
+        "    3.An object is created many times as per requirement.\n",
+        "    4.An object is a physical entity.\n",
+        "    5.It is declared  with a class name.\n",
+        "    6.Each object has its own values, which are associated with it.\n",
+        "    7.Objects are like a variable of the class."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "baa1c978",
+      "metadata": {
+        "id": "baa1c978"
+      },
+      "source": [
+        "### 7. Can you call the base class method without creating an instance?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "c6d4e129",
+      "metadata": {
+        "id": "c6d4e129",
+        "outputId": "04642b04-981e-4641-d2b9-a24e8b5973b0"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "CompanyInfo class\n",
+            "EmployeeInfo class\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Yes,It is possible, By inheriting from that class\n",
+        "\n",
+        "class CompanyInfo():\n",
+        "    print('CompanyInfo class')\n",
+        "\n",
+        "class EmployeeInfo(CompanyInfo):\n",
+        "    print('EmployeeInfo class')\n",
+        "\n",
+        "emp = EmployeeInfo()"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "1db10dd9",
+      "metadata": {
+        "id": "1db10dd9"
+      },
+      "source": [
+        "### 8. What is inheritance?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "33e48832",
+      "metadata": {
+        "id": "33e48832"
+      },
+      "outputs": [],
+      "source": [
+        "Inheritance allows us to define a class that inherits all the methods and properties from base class.\n",
+        "It helps to reuse the code.\n",
+        "Parent class is the class being inherited from, also called base class.\n",
+        "Child class is the class that inherits from another class, also called derived class."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "22d2c0a8",
+      "metadata": {
+        "id": "22d2c0a8"
+      },
+      "source": [
+        "### 9. What are the different types of inheritance?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "8d72946d",
+      "metadata": {
+        "id": "8d72946d"
+      },
+      "outputs": [],
+      "source": [
+        "there are 5 types of inheritance:\n",
+        "    1.single inheritance\n",
+        "    2.multiple inheritance\n",
+        "    3.multilevel inheritance\n",
+        "    4.hirarchical inheritance\n",
+        "    5.hybrid inheritance"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "56c86684",
+      "metadata": {
+        "id": "56c86684"
+      },
+      "source": [
+        "### 1.single Inheritance"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "337b04d4",
+      "metadata": {
+        "id": "337b04d4"
+      },
+      "outputs": [],
+      "source": [
+        "Single inheritance allows a class to inherit properties from single parent class.\n",
+        "This can be use to  add new features to existing code."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "1e1769dd",
+      "metadata": {
+        "id": "1e1769dd",
+        "outputId": "8b8f5769-dd8d-446f-dba2-e6f48d2dbf72"
+      },
+      "outputs": [
+        {
+          "data": {
+            "text/plain": [
+              "8"
+            ]
+          },
+          "execution_count": 9,
+          "metadata": {},
+          "output_type": "execute_result"
+        }
+      ],
+      "source": [
+        "class Addition():\n",
+        "    def __init__(self,a,b):\n",
+        "        self.a=a\n",
+        "        self.b=b\n",
+        "        self.add = self.a + self.b\n",
+        "\n",
+        "class Calculation(Addition):\n",
+        "\n",
+        "    def __init__(self, a, b):\n",
+        "        super().__init__(a, b)\n",
+        "        self.result = self.add\n",
+        "\n",
+        "c1 = Calculation(3,5)\n",
+        "c1.result\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "1f249597",
+      "metadata": {
+        "id": "1f249597",
+        "outputId": "6aaeeb60-7469-46ce-f734-2103c2d47776"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "EmployeeInfo init function\n",
+            "CompanyInfo class init function\n",
+            "employee salary is 60000\n",
+            "I0909\n",
+            "IDC\n",
+            "Delhi\n",
+            "<bound method EmployeeInfo.get_employee_name of <__main__.EmployeeInfo object at 0x000002354D1504D0>>\n"
+          ]
+        }
+      ],
+      "source": [
+        "class CompanyInfo:\n",
+        "\n",
+        "    company_name = 'IDC'\n",
+        "\n",
+        "    def __init__(self, name):\n",
+        "        print('CompanyInfo class init function')\n",
+        "        self.name = name\n",
+        "        self.location = 'Delhi'\n",
+        "\n",
+        "    def get_company_name(self):\n",
+        "        print('company name in CompanyInfo:', self.company_name)\n",
+        "\n",
+        "    def get_company_location(self):\n",
+        "        print('company location is', self.location)\n",
+        "\n",
+        "class EmployeeInfo(CompanyInfo):\n",
+        "\n",
+        "    def __init__(self, emp_id, emp_salary, emp_name):\n",
+        "        print('EmployeeInfo init function')\n",
+        "        super().__init__(emp_name)\n",
+        "\n",
+        "        self.employee_id = emp_id\n",
+        "        self.employee_salary = emp_salary\n",
+        "        self.employee_name = emp_name\n",
+        "\n",
+        "    def get_employee_name(self):\n",
+        "        print('employee name is', self.employee_name)\n",
+        "\n",
+        "    def get_employee_id(self):\n",
+        "        print('employee id is', self.employee_id)\n",
+        "\n",
+        "    def get_employee_salary(self):\n",
+        "        print('employee salary is', self.employee_salary)\n",
+        "\n",
+        "\n",
+        "c1 = EmployeeInfo('I0909', 60000, 'Nita')\n",
+        "c1.get_employee_salary()\n",
+        "print(c1.employee_id)\n",
+        "print(c1.company_name)\n",
+        "print(c1.location)\n",
+        "print(c1.get_employee_name)\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "81296fc3",
+      "metadata": {
+        "id": "81296fc3"
+      },
+      "source": [
+        "### 2.Multiple Inheritance"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "da8c79b7",
+      "metadata": {
+        "id": "da8c79b7"
+      },
+      "outputs": [],
+      "source": [
+        "when a class can be derived from more than one base class this type of inheritance is called as multiple inheritance."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "9165d1f4",
+      "metadata": {
+        "id": "9165d1f4",
+        "outputId": "bdc4b613-c8b6-4dd8-8b1d-15055b22a14b"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Calculation Init Function\n",
+            "result function\n",
+            "addition of 2 and 3 is 5\n",
+            "multiplication of 2 and 3 is 6\n"
+          ]
+        }
+      ],
+      "source": [
+        "class AdditionClass:\n",
+        "    def addition(self, a, b):\n",
+        "        self.a = a\n",
+        "        self.b = b\n",
+        "        self.add = self.a + self.b\n",
+        "        print(f'addition of {self.a} and {self.b} is {self.add}')\n",
+        "        return self.add\n",
+        "\n",
+        "class MultiplicationClass:\n",
+        "    def multiplication(self, p, q):\n",
+        "        self.p = p\n",
+        "        self.q = q\n",
+        "        self.mul = self.p * self.q\n",
+        "        print(f'multiplication of {self.p} and {self.q} is {self.mul}')\n",
+        "        return self.mul\n",
+        "\n",
+        "class Calculation(AdditionClass, MultiplicationClass):\n",
+        "    def __init__(self, a, b):\n",
+        "        print(\"Calculation Init Function\")\n",
+        "        self.a = a\n",
+        "        self.b = b\n",
+        "\n",
+        "    def result(self):\n",
+        "        print('result function')\n",
+        "        add_result = self.addition(self.a, self.b)\n",
+        "        mul_result = self.multiplication(self.a, self.b)\n",
+        "        return add_result, mul_result\n",
+        "\n",
+        "obj = Calculation(2, 3)\n",
+        "addition_result, multiplication_result = obj.result()\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "979bc744",
+      "metadata": {
+        "id": "979bc744"
+      },
+      "source": [
+        "### 3.multilevel inheritance"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "68ae4edc",
+      "metadata": {
+        "id": "68ae4edc"
+      },
+      "outputs": [],
+      "source": [
+        "When the properties of class A is inherit in class B and then properties of class B is inherit in class C and\n",
+        "so on then this is called multilevel inheritance.\n",
+        "This is similar to a relationship representing a child and grandfather."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "fcecd8b5",
+      "metadata": {
+        "id": "fcecd8b5",
+        "outputId": "42c8f531-6503-4377-fd80-2ccd0a37e616"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Baseclass1 init function\n",
+            "Baseclass2 init function\n",
+            "Derived class init function\n",
+            "self.a == 5 and self.b == 6\n",
+            "Addition Function\n",
+            "Addition of 5 and 6 is 11\n",
+            "Multiplication Funtion\n",
+            "Multiplication of 5 and 6 is 30\n",
+            "Value in x variable is  1000\n"
+          ]
+        }
+      ],
+      "source": [
+        "class BaseClass1():\n",
+        "    def __init__(self,variable1):\n",
+        "        print(\"Baseclass1 init function\")\n",
+        "\n",
+        "    def addition(self):\n",
+        "        self.x = 1000\n",
+        "        print(\"Addition Function\")\n",
+        "        add = self.a + self.b\n",
+        "        print(f\"Addition of {self.a} and {self.b} is {add}\")\n",
+        "\n",
+        "class BaseClass2(BaseClass1):\n",
+        "    def __init__(self,variable1,variable2):\n",
+        "        BaseClass1.__init__(self,variable1)\n",
+        "        print(\"Baseclass2 init function\")\n",
+        "\n",
+        "    def multiplication(self):\n",
+        "        print(\"Multiplication Funtion\")\n",
+        "        mul = self.a * self.b\n",
+        "        print(f\"Multiplication of {self.a} and {self.b} is {mul}\")\n",
+        "        print(\"Value in x variable is \",self.x)\n",
+        "\n",
+        "class DerivedClass(BaseClass2):\n",
+        "    def __init__(self,a,b):\n",
+        "        var1 = 100\n",
+        "        var2 = 200\n",
+        "        BaseClass2.__init__(self,var1,var2)\n",
+        "        print(\"Derived class init function\")\n",
+        "        self.a = a\n",
+        "        self.b = b\n",
+        "        print(f\"self.a == {self.a} and self.b == {self.b}\")\n",
+        "\n",
+        "d1 = DerivedClass(5,6)\n",
+        "d1.addition()\n",
+        "d1.multiplication()\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "8e4c8b9d",
+      "metadata": {
+        "id": "8e4c8b9d"
+      },
+      "source": [
+        "### 4.Hierarchical Inheritance"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4b276b8c",
+      "metadata": {
+        "id": "4b276b8c"
+      },
+      "outputs": [],
+      "source": [
+        "When more than one derived classes are created from a single base this type of inheritance is called hierarchical inheritance.\n",
+        "In this program, we have a parent (base) class and two child (derived) classes.\n",
+        "Both derived classes are not depened on each other."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "f40082c0",
+      "metadata": {
+        "id": "f40082c0"
+      },
+      "outputs": [],
+      "source": [
+        "class Parent:\n",
+        "    pass\n",
+        "\n",
+        "class Child1(Parent):\n",
+        "    pass\n",
+        "\n",
+        "class Child2(Parent):\n",
+        "    pass"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "ebdd90f1",
+      "metadata": {
+        "id": "ebdd90f1"
+      },
+      "source": [
+        "### 5.Hybrid Inheritance"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "e987bef4",
+      "metadata": {
+        "id": "e987bef4"
+      },
+      "outputs": [],
+      "source": [
+        "Inheritance consisting of multiple types of inheritance is called hybrid inheritance"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "c311e16e",
+      "metadata": {
+        "id": "c311e16e"
+      },
+      "source": [
+        "### 10. What is the difference between multiple and multilevel inheritances?¶"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "6dd80d81",
+      "metadata": {
+        "id": "6dd80d81"
+      },
+      "outputs": [],
+      "source": [
+        "Multiple Inheritance is when a class inherits from many base classes.\n",
+        "\n",
+        "Multilevel inheritance has three levels. The intermediate class that B inherits from class A and class C inherits from class B.\n",
+        "A is the base class for B and B is the base class for C."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "5d2707c1",
+      "metadata": {
+        "id": "5d2707c1"
+      },
+      "source": [
+        "### 11. What are the limitations of inheritance?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "0df03337",
+      "metadata": {
+        "id": "0df03337"
+      },
+      "outputs": [],
+      "source": [
+        "1.Tight Coupling:\n",
+        "\n",
+        "Inheritance creates a strong relationship between the superclass and its subclasses.\n",
+        "Changes to the superclass can affect all its subclasses, leading to tight coupling.\n",
+        "\n",
+        "this means that even though parent classes can be executed independently,\n",
+        "child classes cannot be executed without defining their parent classes.\n",
+        "\n",
+        "2.Inflexibility:\n",
+        "\n",
+        "Inheritance establishes a fixed hierarchical relationship between classes at compile-time.\n",
+        "This can lead to inflexibility in the design when new requirements arise.\n",
+        "\n",
+        "3.Decreases the Execution Speed:\n",
+        "\n",
+        "loading multiple classes because they are interdependent on each other"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "c446c465",
+      "metadata": {
+        "id": "c446c465"
+      },
+      "source": [
+        "### 12. What are the superclass and subclass?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "b5db7882",
+      "metadata": {
+        "id": "b5db7882"
+      },
+      "outputs": [],
+      "source": [
+        "1.Superclass:\n",
+        "A superclass, also known as a parent class or base class, is a class that is extended or inherited by other classes.\n",
+        "\n",
+        "2.Subclass:\n",
+        "A subclass, also known as a derived class or child class, is a class that inherits properties and behaviors from a superclass."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "c28d5226",
+      "metadata": {
+        "id": "c28d5226"
+      },
+      "source": [
+        "### 13. What is the super keyword?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "bf1dbaac",
+      "metadata": {
+        "id": "bf1dbaac"
+      },
+      "outputs": [],
+      "source": [
+        "The super() builtin returns a proxy object (temporary object of the superclass)\n",
+        "that allows us to access methods of the base class.\n",
+        "\n",
+        "Use of super()\n",
+        "In Python, super() has two major use cases:\n",
+        "\n",
+        "Allows us to avoid using the base class name explicitly\n",
+        "Working with Multiple Inheritance"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "81bc2313",
+      "metadata": {
+        "id": "81bc2313"
+      },
+      "source": [
+        "### 14. What is encapsulation?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "5832c347",
+      "metadata": {
+        "id": "5832c347"
+      },
+      "outputs": [],
+      "source": [
+        "1.Encapsulation hides the internal state and behavior of an object from the outside world.\n",
+        "  and exposes only the necessary interfaces for interaction.\n",
+        "\n",
+        "2. encapsulation means protect data from modification or accidental changes from outside of class.\n",
+        "\n",
+        "3.  key aspects of encapsulation:\n",
+        "    1.data hiding\n",
+        "    2.access control\n",
+        "    3.modularity\n",
+        "    4.abstraction"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "83d53d8c",
+      "metadata": {
+        "id": "83d53d8c"
+      },
+      "source": [
+        "### 15. What is the name mangling and how does it work?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "b2cfd4dc",
+      "metadata": {
+        "id": "b2cfd4dc"
+      },
+      "outputs": [],
+      "source": [
+        "name mangling- used to access or modify private variable or method from outside of the class.\n",
+        "syntax:\n",
+        "    Syntax : _classname__identifier(variable/method)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "136a5e1c",
+      "metadata": {
+        "id": "136a5e1c"
+      },
+      "outputs": [],
+      "source": [
+        "class Calculation:\n",
+        "    __name = 'Python'   # Private Class Variable\n",
+        "    def __init__(self,a,b):\n",
+        "        print(\"Calculcation Init Function\")\n",
+        "        self._a = a   # Public instance variable\n",
+        "        self.__b = b  # private instance variable\n",
+        "\n",
+        "    def __addition(self): # Private method\n",
+        "        self.add = self._a + self.__b\n",
+        "        print(f\"Addition of {self._a} and {self.__b} is {self.add}\")\n",
+        "        return self.add\n",
+        "\n",
+        "    def multiplication(self): # Public method\n",
+        "#         self.__addition()\n",
+        "        mul = self._a * self.__b\n",
+        "        print(f\"Multiplication of {self._a} and {self.__b} is {mul}\")\n",
+        "        print(f\"Class Variable Name:{self.__name}\")\n",
+        "        return mul\n",
+        "\n",
+        "Obj = Calculation(5,10)\n",
+        "Obj._a=5000\n",
+        "Obj._Calculation__b=58\n",
+        "Obj._Calculation__name='data science'\n",
+        "Obj.multiplication()\n",
+        "Obj._Calculation__addition()\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "532fc2c9",
+      "metadata": {
+        "id": "532fc2c9"
+      },
+      "source": [
+        "### 16. What is the difference between public and private access modifiers?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "f660e530",
+      "metadata": {
+        "id": "f660e530"
+      },
+      "outputs": [],
+      "source": [
+        "Access modifiers have limit access to the variables and methods of a class.\n",
+        "Python provides two types of access modifiers private, public.\n",
+        "\n",
+        "Public Member: Accessible anywhere from outside of class.\n",
+        "Private Member: Accessible within the class (double underscore variable_name/method_name(identifiers))\n",
+        "\n",
+        "Public Variables  and Public Methods:\n",
+        "    Can be accessed from outside the class\n",
+        "\n",
+        "Private Variables and Private Methods:\n",
+        "    Can not be accessed/modified from outside the class(access within the class)\n",
+        "    __variablename\n",
+        "    __methodname"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "bc3efdbf",
+      "metadata": {
+        "id": "bc3efdbf"
+      },
+      "source": [
+        "### 17. Is Python 100 percent object-oriented?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "5a61a442",
+      "metadata": {
+        "id": "5a61a442"
+      },
+      "outputs": [],
+      "source": [
+        "No,Python supports all the concept of \"object oriented programming\" but it is NOT fully object oriented because -\n",
+        "The code in Python can also be written without creating classes."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "74483c9d",
+      "metadata": {
+        "id": "74483c9d"
+      },
+      "source": [
+        "### 18. What is data abstraction?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "595bd56a",
+      "metadata": {
+        "id": "595bd56a"
+      },
+      "outputs": [],
+      "source": [
+        "Abstract class is only used for declaration, not for implementation\n",
+        "We can not create object of Abstract class\n",
+        "\n",
+        "It is used to hide internal functionality of your project\n",
+        "It is used to hide irrelevant data/unused data/attributes in order to reduce complexity and ehance efficiency\n",
+        "By default python does not support abstract class (We need to import abc module)\n",
+        "\n",
+        "Abstract class contains one or more abstract methods\n",
+        "\n",
+        "@abstractmethod >>  decorator is used to define abstract method"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "e9b3d6e0",
+      "metadata": {
+        "id": "e9b3d6e0"
+      },
+      "source": [
+        "### 19. How to achieve data abstraction?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "e6a9939b",
+      "metadata": {
+        "id": "e6a9939b"
+      },
+      "outputs": [],
+      "source": [
+        "Data Abstraction in Python can be achieved through creating abstract classes and inheriting them later.\n",
+        "from abc import ABC,abstractmethod\n",
+        "importing ABC library,abstracting method makes each method mandatory in abstaction class."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "587a5eed",
+      "metadata": {
+        "id": "587a5eed"
+      },
+      "source": [
+        "### 20. What is an abstract class?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "1273f1a1",
+      "metadata": {
+        "id": "1273f1a1"
+      },
+      "outputs": [],
+      "source": [
+        "Abstract class can be considered a blueprint for other classes.(Blueprint of project)\n",
+        "It allows you to create a set of methods that must be created within any child classes built from the abstract class.\n",
+        "A class which contains one or more abstract methods is called an abstract class.\n",
+        "We can not create an object of abstract class\n",
+        "Abstract class is only used for declaration, does not for implementation.\n",
+        "import abc\n",
+        "\n",
+        "How Abstract Base classes work :\n",
+        "By default, Python does not provide abstract classes.\n",
+        "Python comes with a module that provides the base for defining Abstract Base classes(ABC) and that module name is ABC.\n",
+        "ABC works by decorating methods of the base class as abstract and then registering concrete classes\n",
+        "as implementations of the abstract base.\n",
+        "A method becomes abstract when decorated with the keyword @abstractmethod. For Example –"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "787dde01",
+      "metadata": {
+        "id": "787dde01"
+      },
+      "source": [
+        "### 21. Can you create an object of an abstract class?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "d7f44731",
+      "metadata": {
+        "id": "d7f44731"
+      },
+      "outputs": [],
+      "source": [
+        "no, we cannot create object of absract class .\n",
+        "absract class use only for declaration not for implementation."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "2a6e76b5",
+      "metadata": {
+        "id": "2a6e76b5"
+      },
+      "source": [
+        "### 22. Differentiate between data abstraction and encapsulation"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "6d113183",
+      "metadata": {
+        "id": "6d113183"
+      },
+      "outputs": [],
+      "source": [
+        "Abstraction\n",
+        "\n",
+        "1.Abstraction works on the design level.\n",
+        "2.Abstraction is implemented to hide unnecessary data and withdrawing relevant data.\n",
+        "3.It focuses on the \"what the work of an object\".\n",
+        "4.Abstraction focuses on outside viewing, for example, shifting the car.\n",
+        "5.Abstraction is supported in the interface and the abstract class.\n",
+        "\n",
+        "\n",
+        "Encapsulation:\n",
+        "\n",
+        "Encapsulation is wrapping attributes and methods together as a one unit.\n",
+        "1.Encapsulation works on the application level.\n",
+        "2.Encapsulation is the mechanism of hiding the code and the data together from the outside world or misuse.\n",
+        "  Encapsulation allows us to restrict accessing variables and  methods directly and\n",
+        "  prevent accidental data modification of data from outside the class\n",
+        "3.It focuses on the \"inner details of how the object works.\"\n",
+        "4.Encapsulation focuses on internal working or inner viewing, for example, the production of the car.\n",
+        "5.Encapsulation is supported using, e.g. public, private access modification systems.\n",
+        "  by creating private data members attributes and methods within a class.\n",
+        "\n",
+        "Public Variables  and Public Methods:\n",
+        "    Can be accessed from outside the class\n",
+        "\n",
+        "Private Varaibles and PRivate Methods:\n",
+        "    Can not be accessed/modified from outside the class(can access within the class)\n",
+        "    __variablename\n",
+        "    __methodname"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "b0c8d413",
+      "metadata": {
+        "id": "b0c8d413"
+      },
+      "source": [
+        "### 23. What is polymorphism?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "e4b8d14d",
+      "metadata": {
+        "id": "e4b8d14d"
+      },
+      "outputs": [],
+      "source": [
+        "Polymorphism means having many forms.\n",
+        "In programming, polymorphism means Same method name with different functionality present in multiple classes\n",
+        "\n",
+        "len\n",
+        "sum\n",
+        "min\n",
+        "max\n",
+        "\n",
+        "Overriding Method:\n",
+        "    Same method in parent class and child class\n",
+        "    Child class method overrides parent class method\n",
+        "    Each class independant(each class)is base class,create each class object\n",
+        "    Same method is present in parent class as well as child class\n",
+        "\n",
+        "Overriding >> Inherit >> When we call the function >> Child class is executed\n",
+        "If you want to execute the parent class >> We will have to call it in function of child class"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "f7f0abbb",
+      "metadata": {
+        "id": "f7f0abbb"
+      },
+      "source": [
+        "### 24. What is the difference betwen overloading and Overriding method?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "051413e4",
+      "metadata": {
+        "id": "051413e4"
+      },
+      "outputs": [],
+      "source": [
+        "Overloading:\n",
+        "1.In the method overloading, methods or functions must have the same name and different signatures.\n",
+        "2.Method overloading is a example of compile time polymorphism.\n",
+        "3.In the method overloading, inheritance may or may not be required.\n",
+        "4.Method overloading is performed between methods within the class.\n",
+        "5.It is used in order to add more to the behavior of methods.\n",
+        "6.In method overloading, there is no need of more than one class.\n",
+        "\n",
+        "Overriding\n",
+        "1.In overriding, methods or functions must have the same name and same signatures(\n",
+        "2.In overriding is a example of run time polymorphism.\n",
+        "3.In method overriding, inheritance always required.\n",
+        "4.In method overriding is done between parent class and child class methods.\n",
+        "5.In it is used in order to change the behavior of exist methods\n",
+        "6.In method overriding, there is need of at least of two classes."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "id": "83d55ab7",
+      "metadata": {
+        "id": "83d55ab7"
+      },
+      "source": [
+        "### 25. What are the limitations of OOPs?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "2c61d915",
+      "metadata": {
+        "id": "2c61d915"
+      },
+      "outputs": [],
+      "source": [
+        "Creating a program in the OOPS concept is a little bit difficult.\n",
+        "The size of applications developed with OOPS is larger than the procedural way.\n",
+        "The programmer should have proper planning before creating a program using the OOPS concept."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "7a42a38b",
+      "metadata": {
+        "id": "7a42a38b"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "4bf0a042",
+      "metadata": {
+        "id": "4bf0a042"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "58178ce2",
+      "metadata": {
+        "id": "58178ce2"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "2d59619a",
+      "metadata": {
+        "id": "2d59619a"
+      },
+      "outputs": [],
+      "source": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "id": "f6265de6",
+      "metadata": {
+        "id": "f6265de6"
+      },
+      "outputs": [],
+      "source": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3 (ipykernel)",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.11.5"
+    },
+    "colab": {
+      "provenance": []
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
